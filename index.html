@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>MOH Legal Assistant Pilot</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body style="background-color: #f5f7f9; margin: 0;">
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect, useRef } = React;
+
+        function AgencyAssistant() {
+            const [isOpen, setIsOpen] = useState(false);
+            const [input, setInput] = useState("");
+            const [messages, setMessages] = useState([
+                { role: 'bot', text: "Hello Mako. I've indexed the latest circulars. How can I assist with your research or drafting today?" }
+            ]);
+
+            // ... (Paste the rest of the Component logic I gave you here) ...
+            
+            return (
+                <div style={{ /* UI Styles */ }}>
+                   {/* UI Structure */}
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<AgencyAssistant />);
+    </script>
+</body>
+</html>
